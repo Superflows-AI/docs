@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+pagination_next: 'getting-started/overview'
 ---
 
 # Introduction
