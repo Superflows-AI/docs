@@ -12,7 +12,7 @@ Advanced users can also configure an API specification directly within the Actio
 
 ### API Specification requirements
 
-Superflows only accepts API specs in the Open API Specification format. You can read more about that on our [API Specification documentation page](#../../api-spec-requirements). 
+Superflows only accepts API specs in the Open API Specification format. You can read more about that on our [API Specification documentation page](../../api-spec-requirements). 
 
 This file should be a .json. If you have an Open API Specification that is not a .json, you should be able to convert this using an online file converter.
 

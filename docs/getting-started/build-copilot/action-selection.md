@@ -17,6 +17,6 @@ We are working on improving this, but more tuning of the Action descriptions in 
 
 ### Bulk action selection
 
-You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. More details about this functionality can be found on the [Configuration page of the documentation](#../../category/configuration/)
+You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. More details about this functionality can be found on the [Configuration page of the documentation](../../category/configuration/)
 
 For now, we'll continue to testing in the playground.

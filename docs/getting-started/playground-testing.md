@@ -11,7 +11,7 @@ It has a chat interface where you can ask questions or give commands and the cop
 
 You can ask questions in series, and the copilot will have the context of the previous questions. For example, you may want to start by asking the copilot to retrieve a particular dataset or customer group from your API, which you can then ask questions about. 
 
-Full details about the playground and all to controls available on this page can be found on the [Playground documentation page](#../category/playground).
+Full details about the playground and all to controls available on this page can be found on the [Playground documentation page](../category/playground).
 
 The key controls for getting up and running are 'Developer mode', 'Testing mode' and 'API Key'.
 
@@ -43,6 +43,6 @@ If you're using test mode, this API key is not used.
 
 The API key provided is never stored in our databases.
 
-If you're struggling to connect your API, more information about how this is handled within Superflows can be found in the [Connecting your API documentation page](#../category/connecting-your-api).
+If you're struggling to connect your API, more information about how this is handled within Superflows can be found in the [Connecting your API documentation page](../category/connecting-your-api).
 
 

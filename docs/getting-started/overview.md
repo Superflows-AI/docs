@@ -25,14 +25,14 @@ If you would simply like to test Superflows, you can use one of the preset copil
 
 Alternatively, you can upload an Open API Specification of your choosing and play with it in testing mode without connecting it to the API. 
 
-In these cases where you are not configuring your own copilot, feel free to skip the requirements below and [continue to onboarding](#./onboarding).
+In these cases where you are not configuring your own copilot, feel free to skip the requirements below and [continue to onboarding](getting-started/onboarding).
 
 ### Requirements for building a copilot
 
 If you'd like to build your own copilot, before getting started, make sure you have the following requirements in place:
 
 - **API specification**. The best format to use for the specification is an **Open API Specification**, a widely used open standard for API Specificiations. 
-    - Full details of the format can be found here, and you can read more about how we handle this and any [errors that arise during upload here](#../api-spec-requirements). 
+    - Full details of the format can be found here, and you can read more about how we handle this and any [errors that arise during upload here](../connecting-your-api/api-spec-requirements). 
     - If your API specification is not in this format, you can find API Specification converters online. Here are a few, though we cannot endorse them:
         - https://lucybot-inc.github.io/api-spec-converter/
         - https://openapi.tools/
