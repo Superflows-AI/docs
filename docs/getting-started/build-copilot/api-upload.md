@@ -12,7 +12,7 @@ Advanced users can also configure an API specification directly within the Actio
 
 ### API Specification requirements
 
-Superflows only accepts API specs in the Open API Specification format. You can read more about that on our [API Specification documentation page](./api-spec-requirements). 
+Superflows only accepts API specs in the Open API Specification format. You can read more about that on our [API Specification documentation page](#../../api-spec-requirements). 
 
 This file should be a .json. If you have an Open API Specification that is not a .json, you should be able to convert this using an online file converter.
 
@@ -29,9 +29,3 @@ TODO: ADD ANNOTATED IMAGE
 When you've uploaded your API, the different endpoints will appear on the Actions tab of the dashboard. They will be organised into 'tabs' depending on how your API Specification is organised. It should look something like this: 
 
 TODO: ADD IMAGE
-
-### Debugging errors
-
-You may run into errors when uploading your API specification. This is usually caused by the formatting of the API specification or by errors within it. To debug this, head to our [API Specification documentation page](../api-spec-requirements).
-
-Next, lets continue to configure your copilot by selecting or deselecting actions available to it. 
