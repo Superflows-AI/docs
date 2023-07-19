@@ -63,8 +63,14 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/superflows-name-logo.png',
+      themeConfig: {
+        colorMode: {
+          defaultMode: 'dark',
+          disableSwitch: false,
+          respectPrefersColorScheme: false,
+        }},
       navbar: {
-        title: 'Superflows Docs',
+        title: 'Superflows',
         logo: {
           alt: 'Superflows Logo',
           src: 'img/superflowsFavicon.png',
@@ -74,7 +80,7 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
