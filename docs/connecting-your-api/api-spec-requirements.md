@@ -15,6 +15,8 @@ OpenAPI Specifications are an open industry standard for defining APIs. A full d
 
 The initiatives website describes the specification format as follows:
 
-*The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.*
+>*The OpenAPI Specification (OAS) defines a standard, programming language-agnostic interface description for HTTP APIs, which allows both humans and computers to discover and understand the capabilities of a service without requiring access to source code, additional documentation, or inspection of network traffic. 
+> 
+>When properly defined via OpenAPI, a consumer can understand and interact with the remote service with a minimal amount of implementation logic. Similar to what interface descriptions have done for lower-level programming, the OpenAPI Specification removes guesswork in calling a service.
 
-Superflows uses OpenAPI Specifications because they are a widely accepted standard. If you do not use OpenAPI Specifications, please contact our support team and we'll try to accomated your needs [TODO: ADD SUPPORT LINK].
+If you do not use OpenAPI Specifications, please contact our support team [TODO: ADD SUPPORT LINK].

@@ -11,22 +11,16 @@ pagination_prev: 'getting-started/onboarding'
 If you'd like to build your own copilot, make sure you have the following requirements in place:
 
 - **API specification**. 
-    - Superflows accepts **Open API Specification** in json format, a widely used open standard for API Specificiations
-    - Full details of the format can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements). 
-    - If your API specification is not in this format, you can find API Specification converters online
+    - Superflows accepts **Open API Specification** in json format, a widely used open standard for API Specificiations. Full details can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements)
     - If you are unsure whether you have an API specification or what format it is in, you should contact your developer team or our support team
 - **Open API**. 
-    - In order to make requests to your API, it must be open. 
+    - In order to make requests to your API, it must be open 
     - You will need to provide the **url where your API is hosted**, and an **API key** to give access to the API
 
 
 ## 2. API Specification upload
 
-To configure a Superflows Copilot to your product, it needs to know which endpoints are available. Superflows achieves this by reading an API Specification. 
-
-You can upload your API Specification on the 'Actions' tab of the Superflows Dashboard (https://dashboard.superflows.ai/actions).
-
-You can upload your file by clicking either 'upload an OpenAPI Specification' or clicking the 'Upload' button'.
+You can upload your API Specification on the 'Actions' tab of the Superflows Dashboard (https://dashboard.superflows.ai/actions) by clicking either 'upload an OpenAPI Specification' or the 'Upload' button'.
 
 TODO: ADD ANNOTATED IMAGE
 
@@ -47,12 +41,10 @@ By default, all of the 'GET' HTTP requests in your API will be selected. You can
 
 ### Number of actions selected
 
-Superflows works best when less than 20 Actions are selected. To get started, we therefore recommend selecting a set of actions smaller than 20 that you are most interested in testing.
-
-We are working on improving this, but more tuning of the Action descriptions in your API Spec or the description of the functionality of the copilot (coming later) may be required if you are using more than 20 actions. For many products, 20 actions is more than enough, but for some more complex products more are required, and some tuning will be needed.
+Superflows works best when less than 20 Actions are selected. We recommend getting started by selecting a set of actions smaller than 20 that you are most interested in testing.
 
 ### Bulk action selection
 
-You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. More details about this functionality can be found on the [Configuration page of the documentation](../../category/configuration/)
+You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. More details about this functionality can be found on the [configuration page of the documentation](../category/configuration/)
 
 For now, we'll continue to testing in the playground.

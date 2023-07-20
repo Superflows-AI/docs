@@ -5,13 +5,11 @@ id: 'playground-testing'
 
 # Playground testing
 
-The [Playground](https://dashboard.superflows.ai/) is where you can test your copilot.
+The [Playground](https://dashboard.superflows.ai/) is where you can test your copilot. It has a chat interface where you can ask questions or give commands and the copilot will reply. 
 
-It has a chat interface where you can ask questions or give commands and the copilot will reply. 
+You can ask questions in series, and the copilot will have the context of the previous questions. For example, for a product analytics tool, you may want to start by asking the copilot to retrieve a particular dataset or customer group from your API, which you can then ask questions about. 
 
-You can ask questions in series, and the copilot will have the context of the previous questions. For example, you may want to start by asking the copilot to retrieve a particular dataset or customer group from your API, which you can then ask questions about. 
-
-The key controls for getting up and running are 'Developer mode', 'Testing mode' and 'API Key'.
+The key controls in the playground are 'Developer mode', 'Testing mode' and 'API Key'.
 
 ### Test mode
 

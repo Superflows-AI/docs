@@ -9,17 +9,13 @@ Developer modes enables you to see the thought process and API calls the copilot
 
 In developer mode, a typical output will show:
 - Reasoning
+    - Enable the AI to process the request and understand what the user wants
 - Plan
+    - Plan a series of actions that will be required to action this request
 - Commands
+    - Shows the API calls the copilot will make to get the information required
 - Tell user
-
-The reasoning step is to enable the AI to process the request and understand what the user wants. 
-
-The planning steps lays out a series of actions that will be required to action this request. 
-
-The command step shows the API calls the copilot will make to get the information required. 
-
-And the tell user step processes this data into an chat output to send to the user. 
+    - The output of the plan and command steps processed into a chat output to send to the user
 
 ### Activating Developer mode
 

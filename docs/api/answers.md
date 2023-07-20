@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Answers
 
-To get Superflows to answer a question via our API, call this endpoint when a user submits a question to the AI:
+Call this endpoint to get Superflows to answer a question via our API.
 
 `POST https://dashboard.superflows.ai/api/v1/answers`
 

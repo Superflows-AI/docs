@@ -1,10 +1,11 @@
 ---
 sidebar_position: 3
-draft: true
 ---
 
 # Copilot Description
 
-A
+The Copilot Description changes the behaviour of the Copilot. It should describe the product the copilot works in, and what it's role within the product is. 
 
-## What's next?
+It can also be helpful to specify the kind of person who will use the assisant.
+
+You can find the copilot description in the [Project page](https://dashboard.superflows.ai/project) of the dashboard under `Project Info / Description`.
