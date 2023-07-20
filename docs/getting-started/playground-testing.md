@@ -5,13 +5,11 @@ id: 'playground-testing'
 
 # Playground testing
 
-The [Playground](https://dashboard.superflows.ai/) is where you can see and test the outputs of your copilot before putting it into production. 
+The [Playground](https://dashboard.superflows.ai/) is where you can test your copilot.
 
-It has a chat interface where you can ask questions or give commands and the copilot will reply. You can test this out without connecting your API by using the 'Testing mode' toggle. More details about how this works are provided below.
+It has a chat interface where you can ask questions or give commands and the copilot will reply. 
 
 You can ask questions in series, and the copilot will have the context of the previous questions. For example, you may want to start by asking the copilot to retrieve a particular dataset or customer group from your API, which you can then ask questions about. 
-
-Full details about the playground and all to controls available on this page can be found on the [Playground documentation page](../category/playground).
 
 The key controls for getting up and running are 'Developer mode', 'Testing mode' and 'API Key'.
 
@@ -37,12 +35,13 @@ You can find the Developer mode toggle at the top left hand corner of the centra
 
 ### API Key
 
-If you are connecting to your API, you'll need to provide an API Key within the playground to see the outputs there. 
-
-If you're using test mode, this API key is not used. 
+If you are connecting to your API, you'll need to provide an API Key within the playground to see the outputs there. If you're using test mode, this API key is not required or used. 
 
 The API key provided is never stored in our databases.
 
 If you're struggling to connect your API, more information about how this is handled within Superflows can be found in the [Connecting your API documentation page](../category/connecting-your-api).
 
+### More information
+
+Full details about the playground and all to controls available on this page can be found on the [Playground documentation page](../category/playground).
 
