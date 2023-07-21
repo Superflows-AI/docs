@@ -5,7 +5,7 @@ draft: true
 
 # Developer mode
 
-Developer modes enables you to see the thought process and API calls the copilot performed to arrive at it's answer. This is useful when checking whether the copilot is functioning properly and debugginig performance issues.
+Developer modes enables you to see the thought process and API calls the assistant performed to arrive at it's answer. This is useful when checking whether the assistant is functioning properly and debugginig performance issues.
 
 In developer mode, a typical output will show:
 - Reasoning
@@ -13,7 +13,7 @@ In developer mode, a typical output will show:
 - Plan
     - Plan a series of actions that will be required to action this request
 - Commands
-    - Shows the API calls the copilot will make to get the information required
+    - Shows the API calls the assistant will make to get the information required
 - Tell user
     - The output of the plan and command steps processed into a chat output to send to the user
 

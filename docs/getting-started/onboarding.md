@@ -10,17 +10,17 @@ Superflows works by connecting an API to a large language model. It handles the 
 
 ## Setup
 
-All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it's the control panel for your product copilot. Head there and follow the onboarding flow.
+All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it's the control panel for your product assistant. Head there and follow the onboarding flow.
 
 You will be prompted to choose whether you would like to 'Quickstart' or 'Build AI Assistant':
-- [**Quickstart**](./quickstart) with a preconfigured copilot for an existing product
+- [**Quickstart**](./quickstart) with a preconfigured assistant for an existing product
     - Recommended for those looking to play with Superflows
     - The next steps are: 
         - Choose a preset assisant
         - Test in our playground
 
 
-- [**Build AI Assistant**](./build-copilot) from scratch with your API information
+- [**Build AI Assistant**](./build-assistant) from scratch with your API information
     - Recommended for those looking to set up their own project
     - The next steps are:
         - Upload an API Specification
@@ -31,5 +31,5 @@ You will be prompted to choose whether you would like to 'Quickstart' or 'Build 
 
 Follow the Getting Started flow depending on which option you chose:
 
-- ### [Build Copilot flow](./build-copilot)
+- ### [Build assistant flow](./build-assistant)
 - ### [Quickstart flow](./quickstart)

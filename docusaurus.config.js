@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Superflows Documentation',
-  tagline: 'Guide to setting up your AI Product Copilot',
+  tagline: 'Guide to setting up your AI Product assistant',
   favicon: 'img/superflowsFavicon.png',
 
   // Set the production url of your site here

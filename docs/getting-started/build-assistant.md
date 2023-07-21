@@ -4,7 +4,7 @@ pagination_next: 'getting-started/playground-testing'
 pagination_prev: 'getting-started/onboarding'
 ---
 
-# Build a Copilot
+# Build a assistant
 
 ## 1. Requirements
 
@@ -24,7 +24,7 @@ When you've uploaded your API, the endpoints will appear as Actions on the dashb
 
 They will be organised into 'tabs' depending on how your API Specification is organised. It should look something like this: 
 
-![API-upload](../../static/img/docs/getting-started/build-copilot/1-actions-tabs.png)
+![API-upload](../../static/img/docs/getting-started/build-assistant/1-actions-tabs.png)
 
 If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](../../connecting-your-api/api-spec-requirements).
 

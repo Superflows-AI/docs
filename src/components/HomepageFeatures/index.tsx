@@ -15,7 +15,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Just upload an API Spec, connect your API, and get a functional 
-        Copilot for your product
+        assistant for your product
       </>
     ),
   },
@@ -24,7 +24,7 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Configure and evaluate your Copilot in a simple to use dashboard
+        Configure and evaluate your assistant in a simple to use dashboard
       </>
     ),
   },
