@@ -8,8 +8,6 @@ pagination_prev: 'getting-started/onboarding'
 
 ## 1. Requirements
 
-If you'd like to build your own copilot, make sure you have the following requirements in place:
-
 - **API specification**. 
     - Superflows accepts **Open API Specification** in json format, a widely used open standard for API Specificiations. Full details can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements)
     - If you are unsure whether you have an API specification or what format it is in, you should contact your developer team or our support team
@@ -20,15 +18,13 @@ If you'd like to build your own copilot, make sure you have the following requir
 
 ## 2. API Specification upload
 
-You can upload your API Specification on the 'Actions' tab of the Superflows Dashboard (https://dashboard.superflows.ai/actions) by clicking either 'upload an OpenAPI Specification' or the 'Upload' button'.
+You can upload your OpenAPI Specification on the 'Actions' tab of the Superflows Dashboard (https://dashboard.superflows.ai/actions) by clicking either 'upload an OpenAPI Specification' or the 'Upload' button'.
 
-TODO: ADD ANNOTATED IMAGE
-
-When you've uploaded your API, the different endpoints will appear on the Actions tab of the dashboard. 
+When you've uploaded your API, the endpoints will appear as Actions on the dashboard. 
 
 They will be organised into 'tabs' depending on how your API Specification is organised. It should look something like this: 
 
-TODO: ADD IMAGE
+![API-upload](../../static/img/docs/getting-started/build-copilot/1-actions-tabs.png)
 
 If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](../../connecting-your-api/api-spec-requirements).
 
@@ -45,6 +41,8 @@ Superflows works best when less than 20 Actions are selected. We recommend getti
 
 ### Bulk action selection
 
-You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. More details about this functionality can be found on the [configuration page of the documentation](../category/configuration/)
+You can also change these in bulk by either the 'tab' the Actions belong to, or by the type of the HTTP request. When getting started, you may want to bulk deselect all actions and then select only those you are most interested in testing. 
 
-For now, we'll continue to testing in the playground.
+More details about this functionality can be found on the [configuration page of the documentation](../category/configuration/)
+
+With your API Spec uploaded and actions selected, continue to testing in the playground.

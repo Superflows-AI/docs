@@ -13,8 +13,6 @@ The second, right-hand menu with the default text 'None' defines the string that
 
 Your API key will be added to the header when Superflows sends a request to your API. The authentication schema used will depend on your API and therefore must be configured by you. 
 
-[TODO: ADD SCREENSHOT]
-
 API keys are not stored in our databases.
 
 ### Accepted Authentication schemes

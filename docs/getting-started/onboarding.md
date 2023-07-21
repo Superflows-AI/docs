@@ -12,7 +12,7 @@ Superflows works by connecting an API to a large language model. It handles the 
 
 All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it's the control panel for your product copilot. Head there and follow the onboarding flow.
 
-You will be prompted to choose whether you would like to Quickstart or Build a Copilot:
+You will be prompted to choose whether you would like to 'Quickstart' or 'Build AI Assistant':
 - [**Quickstart**](./quickstart) with a preconfigured copilot for an existing product
     - Recommended for those looking to play with Superflows
     - The next steps are: 
@@ -20,7 +20,7 @@ You will be prompted to choose whether you would like to Quickstart or Build a C
         - Test in our playground
 
 
-- [**Build Copilot**](./build-copilot) from scratch with your API information
+- [**Build AI Assistant**](./build-copilot) from scratch with your API information
     - Recommended for those looking to set up their own project
     - The next steps are:
         - Upload an API Specification

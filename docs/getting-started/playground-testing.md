@@ -11,13 +11,13 @@ You can ask questions in series, and the copilot will have the context of the pr
 
 The key controls in the playground are 'Developer mode', 'Testing mode' and 'API Key'.
 
+![Playground-image](../../static/img/docs/getting-started/playground-testing/1-playground.png)
+
 ### Test mode
 
 Test mode enables you to play with your copilot without connecting to your API. 
 
 Test mode can be enabled or disabled with the toggle on the right hand side of the screen in the sidepanel underneath the language setting.
-
-[TODO: ADD IMAGE]
 
 When enabled, test mode means the copilot will generate artifical data to respond to the request made in the Playground. The artificial data will be generated based on the type and description provided for the endpoint being mock queried in the API Specification.
 

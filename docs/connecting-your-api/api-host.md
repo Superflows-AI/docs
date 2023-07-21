@@ -9,10 +9,9 @@ Superflows needs to know where to send API requests. This is defined in the 'Pro
 
 `Dashboard / Project / API Settings / API Host`
 
-[TODO: Screenshot]
+
+![api-settings](../../static/img/docs/connecting-your-api/api-host/1-api-settings.png)
 
 The API host should be the url where your API is hosted.
 
-[TODO: PROVIDE EXAMPLES]
-
-This should be in the form of a string. It will typically start with `'https://'`.
+This should be in the form of a string. It will typically start with `https://`.
