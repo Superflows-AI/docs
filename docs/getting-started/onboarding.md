@@ -6,7 +6,7 @@ pagination_prev: 'intro'
 
 # Onboarding
 
-Superflows works by connecting an API to a large language model. It handles the process of going from a user query about a product to having an answer given and actions taken. 
+Superflows works by connecting a large language model to an API. It handles the process of going from a user query to having an answer given and actions taken. 
 
 ## Setup
 
@@ -14,7 +14,7 @@ All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it
 
 You will be prompted to choose whether you would like to 'Quickstart' or 'Build AI Assistant':
 - [**Quickstart**](./quickstart) with a preconfigured assistant for an existing product
-    - Recommended for those looking to play with Superflows
+    - Recommended for those looking to try out Superflows
     - The next steps are: 
         - Choose a preset assisant
         - Test in our playground
@@ -28,8 +28,6 @@ You will be prompted to choose whether you would like to 'Quickstart' or 'Build 
         - Test in our playground
 
 ## Next steps
-
-Follow the Getting Started flow depending on which option you chose:
 
 - ### [Build assistant flow](./build-assistant)
 - ### [Quickstart flow](./quickstart)

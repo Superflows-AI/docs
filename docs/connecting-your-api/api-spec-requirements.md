@@ -6,7 +6,7 @@ sidebar_position: 1
 
 Superflows accepts the open standard '[OpenAPI Specification](https://spec.openapis.org/oas/v3.1.0)' to read API Specifications. Versions 2.0+ are accepted, earlier versions may throw an error.
 
-OpenAPI specifications should be uploaded in .json format.
+OpenAPI specifications can be uploaded in `.json`, `.yaml`, `.txt` format.
 
 ### About OpenAPI Specifications
 

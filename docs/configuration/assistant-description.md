@@ -2,7 +2,7 @@
 sidebar_position: 2
 ---
 
-# assistant Description
+# Assistant Description
 
 The assistant Description changes the behaviour of the assistant. It should describe the product the assistant works in, and what it's role within the product is. 
 

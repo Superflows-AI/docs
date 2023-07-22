@@ -4,15 +4,15 @@ pagination_next: 'getting-started/playground-testing'
 pagination_prev: 'getting-started/onboarding'
 ---
 
-# Build a assistant
+# Build an assistant
 
 ## 1. Requirements
 
 - **API specification**. 
-    - Superflows accepts **Open API Specification** in json format, a widely used open standard for API Specificiations. Full details can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements)
+    - Superflows accepts an **Open API Specification**, a widely used open standard for API Specificiations. The file can be in json, yml or txt format. Full details can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements)
     - If you are unsure whether you have an API specification or what format it is in, you should contact your developer team or our support team
 - **Open API**. 
-    - In order to make requests to your API, it must be open 
+    - In order to make requests to your API it must be open, unless you self-host
     - You will need to provide the **url where your API is hosted**, and an **API key** to give access to the API
 
 
@@ -22,22 +22,26 @@ You can upload your OpenAPI Specification on the 'Actions' tab of the Superflows
 
 When you've uploaded your API, the endpoints will appear as Actions on the dashboard. 
 
-They will be organised into 'tabs' depending on how your API Specification is organised. It should look something like this: 
+They will be organised into 'tags' depending on how your API Specification is organised. It should look something like this: 
 
 ![API-upload](../../static/img/docs/getting-started/build-assistant/1-actions-tabs.png)
 
-If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](../../connecting-your-api/api-spec-requirements).
+If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](/docs/connecting-your-api/api-spec-requirements).
 
 
 ## 3. Selecting actions
 
 After uploading your API spec you should be able to see actions in the Actions tab. 
 
-By default, all of the 'GET' HTTP requests in your API will be selected. You can change this by clicking each individual endpoint (or 'Action' in Superflows terminology) to toggle them on or off, or in bulk by 'tab' or HTTP method.
+By default, all of the `GET` HTTP requests in your API will be selected. You can change this by clicking each individual endpoint (or 'Action' in Superflows terminology) to toggle them on or off, or in bulk by 'tag' or HTTP method.
 
-### Number of actions selected
+### Number of actions enabled
 
-Superflows works best when less than 20 Actions are selected. We recommend getting started by selecting a set of actions smaller than 20 that you are most interested in testing.
+Superflows works best when fewer than 20 Actions are enabled. We recommend getting started by enabling a set of actions smaller than 20 that you are most interested in testing.
+
+## Non-GET request confirmation
+
+[TODO: WRITE AND SHOW NON-GET REQUESTS]
 
 ### Bulk action selection
 

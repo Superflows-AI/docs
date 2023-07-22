@@ -2,7 +2,7 @@
 sidebar_position: 3
 ---
 
-# Creating new actions
+# Creating New Actions
 
 New actions can be created manually within the [Actions page](https://dashboard.superflows.ai/actions) of the Dashboard.
 
@@ -12,7 +12,7 @@ To create a new action, you need to click the 'Add new' button at the bottom of 
 
 ### Action name
 
-The action name should match the name of the API endpoint. It is used by the Superflows assistant to make API requests. 
+The action name should accurately represent what the endpoint does. It is used by the Superflows assistant to make API requests. 
 
 ### Action type
 
@@ -22,19 +22,19 @@ Currently, only HTTP requests are accepted. We will be adding trigger callbacks 
 
 This is used by the assistant to understand what an endpoint is for. Changing this description can therefore change the behaviour of the assistant. 
 
-It's best to use simple, clear language to describe actions. The description should accurately explain what the endpoint is for. It can also be helpful to emphasise key parameters.
+It's best to use simple, clear language to describe actions. The description should accurately explain what the endpoint is for. It can also be helpful to emphasise key parameters if there are a large number of parameters for an endpoint. 
 
 ### Path
 
-The path describes the location of the endpoint within your API. It should look something like this: `api/v1/customers/search`
+The path describes the location of the endpoint within your API. It should look something like this: `/api/v1/customers/search` - it should start with a `/`.
 
 ### Method
 
-The method defines the method of the HTTP request. You can select the appropriate HTTP method from the dropdown menu. 
+The method defines the HTTP request method. 
 
 ### Parameters
 
-This defines which inputs can be given to the API endpoint and how they should be formatted. The parameters required are determined by your API. 
+[TODO: HENRY TO REWRITE]
 
 In OpenAPI Specification format, they should look something like this:
 
