@@ -11,7 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Simple Setup',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/1-api-spec.svg').default,
     description: (
       <>
         Just upload an API Spec, connect your API, and get a functional 
@@ -21,7 +21,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Low-code Control Dashboard',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/2-evaluate.svg').default,
     description: (
       <>
         Configure and evaluate your assistant in a simple to use dashboard
@@ -30,7 +30,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'Plug and play UI Components',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/3-deploy.svg').default,
     description: (
       <>
         Add Superflows to your product in a few lines of code with our 

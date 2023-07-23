@@ -2,7 +2,7 @@
 sidebar_position: 9
 ---
 
-# Integration guide
+# Integration Guide
 
 Guide for integrating Superflows
 

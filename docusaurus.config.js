@@ -82,7 +82,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Superflows-AI',
             label: 'GitHub',
@@ -97,10 +96,35 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
+              {
+                label: 'Getting Started',
+                to: '/docs/getting-started/onboarding',
+              },
+              {
+                label: 'API',
+                to: '/docs/api',
+              },
+              {
+                label: 'Connecting your API',
+                to: '/docs/category/connecting-your-api',
+              },
+              {
+                label: 'Configuration',
+                to: '/docs/category/configuration',
+              },
+              {
+                label: 'Playground',
+                to: '/docs/category/playground',
+              },
+              {
+                label: 'Integration Guide',
+                to: '/docs/integration-guide',
+              }
             ],
+
           },
           {
             title: 'Community',
@@ -119,8 +143,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Landing Page',
+                to: 'https://www.superflows.ai/',
               },
               {
                 label: 'GitHub',
