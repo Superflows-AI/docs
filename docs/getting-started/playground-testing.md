@@ -11,7 +11,7 @@ You can ask questions in series, and the assistant will have the context of the 
 
 The key controls in the playground are 'Developer mode', 'Testing mode' and 'API Key'.
 
-![Playground-image](../../static/img/docs/getting-started/playground-testing/1-playground.png)
+![Playground-image](../../static/img/docs/playground/annotated-playground.png)
 
 ### Test mode
 
