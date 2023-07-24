@@ -41,7 +41,11 @@ Superflows works best when fewer than 20 Actions are enabled. We recommend getti
 
 ## Non-GET request confirmation
 
-[TODO: WRITE AND SHOW NON-GET REQUESTS]
+For non-`GET` requests, Superflows will ask for confirmation. This is because non-`GET` requests will make changes in the account Superflows is connected to. 
+
+Superflows will present the details of the request to you so you can make sure it's safe.
+
+![Confirmation check](../../static/img/docs/playground/confirmation/confirmation-check.png)
 
 ### Bulk action selection
 
