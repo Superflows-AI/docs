@@ -39,7 +39,7 @@ By default, all of the `GET` HTTP requests in your API will be selected. You can
 
 Superflows works best when fewer than 20 Actions are enabled. We recommend getting started by enabling a set of actions smaller than 20 that you are most interested in testing.
 
-## Non-GET request confirmation
+## Non-`GET` request confirmation
 
 For non-`GET` requests, Superflows will ask for confirmation. This is because non-`GET` requests will make changes in the account Superflows is connected to. 
 
