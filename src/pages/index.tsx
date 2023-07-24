@@ -14,11 +14,12 @@ function HomepageHeader() {
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-50"></div>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Getting Started - 10 min ⏱️
           </Link>
         </div>
       </div>

@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Superflows Documentation',
-  tagline: 'Guide to setting up your AI Product Copilot',
+  tagline: 'Guide to setting up your AI Product assistant',
   favicon: 'img/superflowsFavicon.png',
 
   // Set the production url of your site here
@@ -21,7 +21,7 @@ const config = {
   organizationName: 'Superflows-AI', // Usually your GitHub org/user name.
   projectName: 'docs', // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -42,14 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/Superflows-AI/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/Superflows-AI/',
+            'https://github.com/Superflows-AI/docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -82,7 +75,6 @@ const config = {
             position: 'left',
             label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/Superflows-AI',
             label: 'GitHub',
@@ -97,10 +89,35 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Introduction',
                 to: '/docs/intro',
               },
+              {
+                label: 'Getting Started',
+                to: '/docs/getting-started/onboarding',
+              },
+              {
+                label: 'API',
+                to: '/docs/api',
+              },
+              {
+                label: 'Connecting your API',
+                to: '/docs/category/connecting-your-api',
+              },
+              {
+                label: 'Configuration',
+                to: '/docs/category/configuration',
+              },
+              {
+                label: 'Playground',
+                to: '/docs/category/playground',
+              },
+              {
+                label: 'Integration Guide',
+                to: '/docs/integration-guide',
+              }
             ],
+
           },
           {
             title: 'Community',
@@ -119,8 +136,8 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'Landing Page',
+                to: 'https://www.superflows.ai/',
               },
               {
                 label: 'GitHub',

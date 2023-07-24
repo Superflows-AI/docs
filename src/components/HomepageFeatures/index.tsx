@@ -11,40 +11,41 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Simple Setup',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Png: require('@site/static/img/1-api-spec.png').default,
+    //Svg: require('@site/static/img/1-api-spec.svg').default,
     description: (
       <>
         Just upload an API Spec, connect your API, and get a functional 
-        Copilot for your product
+        assistant for your product
       </>
     ),
   },
   {
     title: 'Low-code Control Dashboard',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Png: require('@site/static/img/2-evaluate.png').default,
     description: (
       <>
-        Configure and evaluate your Copilot in a simple to use dashboard
+        Configure and evaluate your assistant in a simple to use dashboard
       </>
     ),
   },
   {
-    title: 'Plug and play UI Components',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: '1-Click Deployment',
+    Png: require('@site/static/img/3-deploy.png').default,
+    //Svg: require('@site/static/img/3-deploy.svg').default,
     description: (
       <>
-        Add Superflows to your product in a few lines of code with our 
-        customisable UI components
+        Deploy Superflows to Vercel in 1-click
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, Png, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Png} className={styles.featurePng} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

@@ -1,16 +1,12 @@
 ---
 sidebar_position: 1
-pagination_next: 'getting-started/overview'
+pagination_next: 'getting-started/onboarding'
 ---
 
 # Introduction
 
-This guide covers how to setup Superflows. 
+This guide covers how to set up Superflows. 
 
-It starts with a 'Getting Started' section, best suited for those new to Superflows. It details how to setup your account, organisation, upload your first API Spec, and interact in with our testing environment. 
+Superflows makes it easy to add an AI assistant that can help users use your product. It can take actions based on user questions, like ChatGPT plugins but within your product.
 
-Later in the documentation, we cover the different customisations available through Superflows, including selecting which actions are available to the copilot and adding our pre-built UI elements to your product. 
-
-Before you know it, you'll have a chat interface to your product, able to guide users and take valuable actions.
-
-Let's get your first copilot **running in our playground in less than 5 minutes**.
+Superflows is designed to be low-code and easy to use. In our user friendly dashboard, you can control the behaviour of your product assistant, change which actions it can take, and test in a chat playground.  
