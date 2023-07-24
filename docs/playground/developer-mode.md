@@ -20,4 +20,4 @@ In developer mode, a typical output will show:
 
 The Developer mode can be toggled on and off in the top left hand corner of the main chat interface in the Playground. 
 
-![Playground-image](../static/img/docs/playground/annotated-playground.png)
+![Test-mode-playground-image](../../static/img/docs/playground/developer-mode/dev-mode.png)
