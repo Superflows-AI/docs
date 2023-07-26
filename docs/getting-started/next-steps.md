@@ -9,7 +9,7 @@ If you built your own assistant, you are now ready to get your assistant ready f
 
 - **Testing**: [Playground](../category/playground)
 - **Configuration**: [Configuration](../category/configuration)
-- **Deployment**: [API](../api), [UI Components](../ui-components)
+- **Deployment**: [API](../api-specification/answers.md), [UI Components](../ui-components)
 
 If you used a preset assistant, you may now want to build your own. To do so, you can head back to the start of this Getting Started guide and follow the ['Build assistant' flow](./build-assistant).
 

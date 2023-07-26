@@ -3,6 +3,7 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+require('dotenv').config();
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -31,6 +32,16 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
+  plugins: [
+    [
+      "posthog-docusaurus",
+      {
+        apiKey: process.env.POSTHOG_API_KEY,
+        enableInDevelopment: false, // optional
+        // other options are passed to posthog-js init as is
+      },
+    ],
+  ],
 
   presets: [
     [
