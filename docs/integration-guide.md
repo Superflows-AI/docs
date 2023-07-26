@@ -1,9 +1,8 @@
 ---
 sidebar_position: 9
+draft: true
 ---
 
 # Integration Guide
 
-Guide for integrating Superflows
-
-H to decide if needed
+Coming soon...
