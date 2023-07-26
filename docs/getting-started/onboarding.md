@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 pagination_prev: 'intro'
+pagination_next: 'getting-started/build-assistant'
 ---
 
 # Onboarding
@@ -12,7 +13,8 @@ Superflows works by connecting a large language model to an API. It handles the 
 All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it's the control panel for your product assistant. Head there and follow the onboarding flow.
 
 You will be prompted to choose whether you would like to 'Quickstart' or 'Build AI Assistant':
-- [**Quickstart**](./quickstart) with a preconfigured assistant for an existing product
+
+- **Quickstart** with a preconfigured assistant for an existing product
     - Recommended for those looking to try out Superflows
     - The next steps are: 
         - Choose a preset assisant
@@ -26,7 +28,4 @@ You will be prompted to choose whether you would like to 'Quickstart' or 'Build 
         - Connect your API (*Optional - you can use test mode*)
         - Test in our playground
 
-## Next steps
-
-- ### [Build assistant flow](./build-assistant)
-- ### [Quickstart flow](./quickstart)
+The Quickstart flow is self-serve and straightforward, so we'll focus on building your own AI assistant.
