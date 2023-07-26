@@ -55,6 +55,10 @@ const config = {
           editUrl:
             'https://github.com/Superflows-AI/docs/tree/main/',
         },
+        blog: {
+          showReadingTime: true,
+          blogSidebarCount: 0,
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -85,6 +89,11 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Docs',
+          },
+          {
+            to: "blog",
+            position: 'left',
+            label: 'Product Roadmap',
           },
           {
             href: 'https://github.com/Superflows-AI',
