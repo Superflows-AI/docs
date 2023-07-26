@@ -1,0 +1,8 @@
+{
+  "label": "API Specification",
+  "position": 10,
+  "link": {
+    "type": "generated-index",
+    "description": "API Specification for our public API"
+  }
+}

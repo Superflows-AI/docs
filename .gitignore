@@ -1,0 +1,5 @@
+.idea/
+.vscode
+.docusaurus/
+node_modules/
+.env
