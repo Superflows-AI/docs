@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+pagination_next: 'connecting-your-api/api-spec-requirements'
 ---
 
 # API Spec Requirements

@@ -11,8 +11,7 @@ type FeatureItem = {
 const FeatureList: FeatureItem[] = [
   {
     title: 'Simple Setup',
-    Png: require('@site/static/img/1-api-spec.png').default,
-    //Svg: require('@site/static/img/1-api-spec.svg').default,
+    Png: require('@site/static/img/docs/homepage/1-upload.png').default,
     description: (
       <>
         Just upload an API Spec, connect your API, and get a functional 
@@ -21,21 +20,21 @@ const FeatureList: FeatureItem[] = [
     ),
   },
   {
-    title: 'Low-code Control Dashboard',
-    Png: require('@site/static/img/2-evaluate.png').default,
+    title: 'Developer Dashboard',
+    Png: require('@site/static/img/docs/homepage/2-dash.png').default,
     description: (
       <>
-        Configure and evaluate your assistant in a simple to use dashboard
+        Configure and evaluate your assistant in a simple to use developer dashboard
       </>
     ),
   },
   {
-    title: '1-Click Deployment',
-    Png: require('@site/static/img/3-deploy.png').default,
+    title: 'Easy Integration',
+    Png: require('@site/static/img/docs/homepage/3-integrate.png').default,
     //Svg: require('@site/static/img/3-deploy.svg').default,
     description: (
       <>
-        Deploy Superflows to Vercel in 1-click
+          Integrate your assistant into your product with a few lines of code
       </>
     ),
   },
@@ -44,12 +43,12 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Png, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
-        <img src={Png} className={styles.featurePng} role="img" />
-      </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div className="text--center padding-horiz--md">
+            <h3 style={{margin: 0}}>{title}</h3>
+            <p style={{"margin-bottom": "5px"}}>{description}</p>
+        </div>
+        <div className="text--center">
+          <img src={Png} style={{"margin-bottom": "10px", "border-radius": "0.375rem", "object-fit": "cover", "border-width": "2px", borderColor: "#94a3b8", borderStyle: "solid"}} className={styles.featurePng} role="img" />
       </div>
     </div>
   );

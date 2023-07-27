@@ -48,7 +48,11 @@ The id returned in the previous response in this conversation. If this is the fi
 
 With each API request, you can provide a description of the user who is asking the question, any useful information for accessing your API (e.g. user id) and instructions on how to address them.
 
+This can also make the LLM faster to respond, since it won't need to query your APIs to get relevant ids before making subsequent queries.
+
 E.g. `"Bill is a salesperson at Acme Corp. His project id is f35ahe2g1p. He's not comfortable with statistical terms, instead use plain English to answer his questions."`
+
+This is never stored on our servers or in our databases.
 
 ---
 
@@ -56,11 +60,15 @@ E.g. `"Bill is a salesperson at Acme Corp. His project id is f35ahe2g1p. He's no
 
 To call your API, Superflows may need an API key. This API key is passed in the header set in the Superflows dashboard.
 
+Find out more about this in the [Connecting your API documentation page](/docs/connecting-your-api/api-host).
+
 ---
 
-**test_mode** `boolean` *(optional)* default `false`
+**mock_api_responses** `boolean` *(optional)* default `false`
 
-In test mode, all responses from your API are mocked. Set to `false` when in production.
+This toggles mocking API responses, like you can in the [playground](/docs/playground/mock-api-responses).
+
+When set to `true`, all responses from your API are mocked. This can be useful for testing purposes. Set to `false` when in production.
 
 ---
 
