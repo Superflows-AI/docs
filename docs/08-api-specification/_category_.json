@@ -3,6 +3,6 @@
   "position": 8,
   "link": {
     "type": "generated-index",
-    "description": "API Specification for our public API"
+    "description": "API Specification for our public API. You never need to read this unless you're developing a frontend component library for our API."
   }
 }
