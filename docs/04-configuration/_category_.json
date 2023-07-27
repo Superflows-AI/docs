@@ -1,0 +1,8 @@
+{
+  "label": "Configuration",
+  "position": 4,
+  "link": {
+    "type": "generated-index",
+    "description": "These pages describe how you can configure Superflows in the developer dashboard to make it work for your use case.",
+  }
+}

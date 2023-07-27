@@ -1,5 +1,6 @@
 ---
 sidebar_position: 1
+id: "onboarding"
 pagination_prev: 'intro'
 pagination_next: 'getting-started/build-assistant'
 ---
@@ -17,15 +18,15 @@ You will be prompted to choose whether you would like to 'Quickstart' or 'Build 
 - **Quickstart** with a preconfigured assistant for an existing product
     - Recommended for those looking to try out Superflows
     - The next steps are: 
-        - Choose a preset assisant
+        - Choose a preset assistant
         - Test in our playground
 
 
-- [**Build AI Assistant**](./build-assistant) from scratch with your API information
+- [**Build AI Assistant**](./02-build-assistant) from scratch with your API specification
     - Recommended for those looking to set up their own project
     - The next steps are:
-        - Upload an API Specification
-        - Connect your API (*Optional - you can use test mode*)
+        - Upload your API Specification
+        - Connect to your API (*Optional - you can use test mode which mocks your API responses*)
         - Test in our playground
 
-The Quickstart flow is self-serve and straightforward, so we'll focus on building your own AI assistant.
+The Quickstart flow is straightforward, so we'll focus on building your own AI assistant.

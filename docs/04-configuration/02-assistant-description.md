@@ -4,7 +4,7 @@ sidebar_position: 2
 
 # Assistant Description
 
-The assistant Description changes the behaviour of the assistant. It should describe the product the assistant works in, and what it's role within the product is. 
+The assistant description changes the behaviour of the assistant. It should describe the product the assistant works in, and what it's role within the product is. 
 
 It can also be helpful to specify the kind of person who will use the assisant.
 

@@ -1,7 +1,8 @@
 ---
-sidebar_position: 8
-
+sidebar_position: 1
 ---
+
+![](../../static/img/docs/superflows-sidebar.gif)
 
 # UI Components
 
