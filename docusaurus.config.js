@@ -114,7 +114,7 @@ const config = {
               },
               {
                 label: 'Getting Started',
-                to: '/docs/02-getting-started/onboarding',
+                to: '/docs/getting-started/onboarding',
               },
               {
                 label: 'API',
@@ -122,15 +122,15 @@ const config = {
               },
               {
                 label: 'Connecting your API',
-                to: '/docs/category/03-connecting-your-api',
+                to: '/docs/category/connecting-your-api',
               },
               {
                 label: 'Configuration',
-                to: '/docs/category/04-configuration',
+                to: '/docs/category/configuration',
               },
               {
                 label: 'Playground',
-                to: '/docs/category/05-playground',
+                to: '/docs/category/playground',
               },
               {
                 label: 'Integration Guide',
