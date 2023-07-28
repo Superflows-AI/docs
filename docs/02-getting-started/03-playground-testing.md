@@ -9,7 +9,7 @@ The [Playground](https://dashboard.superflows.ai/) is where you can test your as
 
 You can ask questions in series, and the assistant will have the context of the previous questions. For example, for a product analytics tool, you may want to start by asking the assistant to retrieve a particular dataset or customer group from your API, which you can then ask questions about.
 
-The key controls in the playground are 'Developer mode', 'Testing mode' and 'API Key'.
+The key controls in the playground are 'Developer mode', 'Mock API response' and 'API Key'.
 
 ![Playground-image](../../static/img/docs/playground/annotated-playground.png)
 
