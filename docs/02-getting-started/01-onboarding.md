@@ -15,7 +15,7 @@ All the action happens on our [Dashboard](https://dashboard.superflows.ai/) - it
 
 You will be prompted to choose whether you would like to 'Quickstart' or 'Build AI Assistant':
 
-- **Quickstart** with a preconfigured assistant for an existing product
+- **Quickstart** with a preconfigured assistant for a mockup product 
 
   - Recommended for those looking to try out Superflows
   - The next steps are:
