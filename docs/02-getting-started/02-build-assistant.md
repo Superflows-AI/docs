@@ -9,7 +9,7 @@ pagination_prev: 'getting-started/onboarding'
 ## 1. Requirements
 
 - **API specification**. 
-    - Superflows accepts an **Open API Specification**, a widely used open standard for API Specificiations. The file can be in json, yml or txt format. Full details can be found on our [API Spec requirements page](../03-connecting-your-api/api-spec-requirements)
+    - Superflows accepts an **Open API Specification**, a widely used open standard for API Specificiations. The file can be in json, yml or txt format. Full details can be found on our [API Spec requirements page](../connecting-your-api/api-spec-requirements)
     - If you are unsure whether you have an API specification or what format it is in, you should contact your developer team or our support team
 - **Open API**. 
     - In order to make requests to your API it must be open, unless you self-host
