@@ -8,10 +8,9 @@ Call this endpoint to get a Superflows response to user input via our API. It ma
 
 `POST https://dashboard.superflows.ai/api/v1/answers`
 
-
 ## Authentication
 
-When sending requests to the Superflows API, you need to authenticate using an `Authorization: Bearer` header. 
+When sending requests to the Superflows API, you need to authenticate using an `Authorization: Bearer` header.
 
 You can find your API token on the [API settings page](https://dashboard.superflows.ai/api-settings). It starts `sfk-*`
 
@@ -31,41 +30,41 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/confirm' \\
 
 ---
 
-**conversation_id** `number | null` *Required*
+**conversation_id** `number | null` _Required_
 
 The id returned in the previous response in this conversation. If this is the first message of the conversation, pass `null`
 
 ---
 
-**confirm** `boolean` *Required*
+**confirm** `boolean` _Required_
 
 Whether to stream the response, allowing the ‘typing’ UX seen in ChatGPT. If true, partial message chunks will be sent as they become available. **Only streaming API is available, so set to `true` or leave out this parameter.**
 
 ---
 
-**user_api_key** `string` *(optional)*
+**user_api_key** `string` _(optional)_
 
 To call your API, Superflows may need an API key. This API key is passed in the header set in the Superflows dashboard.
 
 ---
 
-**test_mode** `boolean` *(optional)* default `false`
+**mock_api_responses** `boolean` _(optional)_ default `false`
 
-In test mode, all responses from your API are mocked. Set to `false` when in production.
+When set to true, all responses from your API are mocked. Set to `false` when in production.
 
 ---
 
 ## Responses
 
-
 ---
+
 ### **200**
 
 `application/json`
 
 Those JSON objects have the following format:
 
-**id** *number*
+**id** _number_
 
 The conversation id. Required to make further requests in the same conversation.
 
@@ -83,36 +82,36 @@ The content of the chunk of the response.
 
 If the role is `"function"`, the content is a string in JSON format, which is the response from the action called.
 
-**name**: *string (optional)*
+**name**: _string (optional)_
 
-Only present if the role is *“function”*.
+Only present if the role is _“function”_.
 
 ---
 
 ### **400**
-    
+
 Invalid request body | No API host found - add an API host on the API settings page
-    
+
 ---
 
 ### **401**
-    
+
 Authentication failed
 
 ---
 
 ### **404**
-    
+
 No active actions found
 
 ---
 
 ### **405**
-    
+
 Only POST requests allowed
 
 ---
 
 ### **500**
-    
+
 Internal Server Error
