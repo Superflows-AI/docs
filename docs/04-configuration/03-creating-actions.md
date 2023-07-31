@@ -34,9 +34,13 @@ The method defines the HTTP request method.
 
 ### Parameters
 
-[TODO: HENRY TO REWRITE]
+The 'parameters' are all parameters to the endpoint excluding the body of the request (in non-GET requests).
 
-In OpenAPI Specification format, they should look something like this:
+[**Full specification here**](https://swagger.io/specification/#parameter-object).
+
+These can be `"in"` the path, query, header or cookie. 
+
+In OpenAPI Specification format, they should look like this:
 
 ```
 [
@@ -52,16 +56,64 @@ In OpenAPI Specification format, they should look something like this:
 
 ### Request body contents
 
-Describes a single request body.
+Describes a single request body. This can be set to `null` where no request body is passed (e.g. all GET requests).
 
-This can be set to 'null'.
+[**Full specification here**](https://swagger.io/specification/#request-body-object).
 
-If not null, the only required field is 'content'. From the OpenAPI Specification definition: 
+If not null, it should look roughly like below:
 
->Defines the content of the request body. The key is a media type or media type range and the value describes it. For requests that match multiple keys, only the most specific key is applicable. e.g. text/plain overrides text
+```json
+{
+  "content": {
+    "application/json": {
+      "schema": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "property2": {
+            "type": "integer"
+          },
+          ...
+        }
+      }
+    }
+  }
+}
+```
 
 ### Responses
 
 Defines the structure of the response from your API. This should include the different response status codes and their meaning. 
 
-Full information on the structure and formatting of response objects in OpenAPI Specifications can be found on the [OpenAPI Inititive website](https://spec.openapis.org/oas/v3.1.0#responses-object).
+[**Full specification here**](https://spec.openapis.org/oas/v3.1.0#responses-object).
+
+An example is below:
+
+```json
+{
+  "200": {
+    "description": "List of organizations",
+    "content": {
+      "application/json": {
+        "schema": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "property2": {
+                "type": "integer"
+              },
+              ...
+            }
+          }
+        }
+      }
+    }
+  }
+}
+```

@@ -40,17 +40,23 @@ The API key for your Superflows account. It starts `sfk-`. You can find this in 
 
 ---
 
-**userApiKey** `string` *Required*
+**superflowsUrl** `string`
+
+The URL of the Superflows deployment. This defaults to the cloud deployment, but if you're self-hosting, or connecting to a local deployment, you'll need to change this.
+
+---
+
+**AIname** `string`
+
+The name of the AI shown in the sidebar window. It doesn't affect the behaviour of the AI.
+
+---
+
+**userApiKey** `string`
 
 The API key for the user to access your API.
 
 Superflows calls your API to answer questions for your user. As a result, this is required if your API requires an API key to access it. This is never stored on our servers or in our databases.
-
----
-
-**hostname** `string`
-
-The hostname of the Superflows deployment. This defaults to the cloud deployment, but if you're self-hosting, or connecting to a local deployment, you'll need to change this.
 
 ---
 
@@ -66,21 +72,9 @@ An array of suggestions to show in the sidebar. These are shown as buttons, and 
 
 ---
 
-**AIname** `string`
+**devMode** `boolean`
 
-The name of the AI shown in the sidebar window. It doesn't affect the behaviour of the AI.
-
----
-
-**styling** `{brandColor?: string; slideoverSide?: "right" | "left"; sidebarHeaderTextColor?: "dark" | "light"}`
-
-This allows you to set basic aspects of the style of the Superflows sidebar. This will be expanded to allow much deeper customization in the future.
-
-The `brandColor` sets the colour of the sidebar header and the button.
-
-The `slideoverSide` sets which side of the screen the sidebar opens on. Set "right" if you want it to open on the right hand side of the screen.
-
-The `sidebarHeaderTextColor` sets the colour of the text on the header of the react. Set "dark" if using a white background
+This enables [**developer mode**](./docs/playground/developer-mode). This is useful for debugging, but should always be set to `false` in production.
 
 ---
 
@@ -92,9 +86,21 @@ When set to `true`, all responses from your API are mocked. This can be useful f
 
 ---
 
-**devMode** `boolean`
+**styling** `{
+  slideoverSide?: "right" | "left";
+  buttonColor?: string;
+  headerBackgroundColor?: string;
+  headerTextColor?: string;
+}`
 
-This enables [**developer mode**](./docs/playground/developer-mode). This is useful for debugging, but should always be set to `false` in production.
+This allows you to set basic aspects of the style of the Superflows sidebar. This will be expanded to allow much deeper customization in the future.
+
+`slideoverSide` sets which side of the screen the sidebar opens on. Set "right" if you want it to open on the right hand side of the screen.
+
+`buttonColor` sets the colour of the submit button.
+
+`headerBackgroundColor` sets the colour of the header of the sidebar.
+
+`headerTextColor` sets the colour of the text on the header of the sidebar.
 
 ---
-
