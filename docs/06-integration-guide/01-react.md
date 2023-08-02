@@ -19,15 +19,24 @@ Then, you have 3 options for adding a Superflows chatbot to your software:
 | 2 | `SuperflowsChat` component                   | Most flexible & customizable                                                       |
 | 3 | The modal or sidebar components              | (1 but you can change the button & control opening/closing the chatbot)            |
 
+:::tip
+If you're using **NextJS**, you'll need to add this to the top of the file where `SuperflowsButton` or `SuperflowsSidebar` is used: 
+```javascript
+'use client'
+```
+:::
+
 ### Method 1: Use the `SuperflowsButton` component (recommended)
 
 This adds a button which opens the chatbot as either a modal or sidebar:
 
 ![Superflows-button](../../static/img/docs/ui-components/superflows-button.png)
 
-(note: This button can be styled using the `buttonStyling` property or `solidIcon` for the icon to be solid instead of an outline, which takes a string of class names.)
+:::note
+This button can be styled using the `buttonStyling` property or `solidIcon` for the icon to be solid instead of an outline, which takes a string of class names.
+:::
 
-You can import the `SuperflowsButton` component and use it in your app:
+You can import the `SuperflowsButton` component and use it in your app.
 
 ```jsx
 import { SuperflowsButton } from '@superflows/chat-ui-react';
