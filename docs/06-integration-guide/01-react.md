@@ -23,7 +23,7 @@ This adds a button which opens the sidebar:
 
 You can import the `SuperflowsButton` component and use it in your app:
 
-Guidance on how to set the properties of the `SuperflowsButton` component [**can be found here**](./docs/ui-components).
+Guidance on how to set the properties of the `SuperflowsButton` component [**can be found here**](../category/ui-components-react).
 
 ```jsx
 import { SuperflowsButton } from '@superflows/chat-ui-react';
