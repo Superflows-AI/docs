@@ -106,7 +106,7 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 
 **initialMessage** `string`
 
-An initial message to "pre-prompt" the AI. When set, on page load this message is be programmatically sent to the AI as though as user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
+An initial message to "pre-prompt" the AI. When set, on page load this message is programmatically sent to the AI as though the user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
 
 (note: this message is sent regardless of whether the sidebar is open)
 
