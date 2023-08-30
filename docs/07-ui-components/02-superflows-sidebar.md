@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-pagination_next: 'integration-guide/react'
+pagination_next: "integration-guide/react"
 ---
 
 # Superflows Sidebar
@@ -15,26 +15,25 @@ It can be imported with:
 import { SuperflowsSidebar } from "@superflows/chat-ui-react";
 ```
 
-----
+---
 
 ## Properties
 
 ---
 
-**open** `boolean` *Required*
+**open** `boolean` _Required_
 
 Whether the sidebar is open or closed. This is a boolean, and can be set to `true` or `false`.
 
-
 ---
 
-**setOpen** `string` *Required*
+**setOpen** `string` _Required_
 
 A function which sets the state of the sidebar. This is required to be passed in, as it allows the sidebar to be closed when the user clicks outside of it.
 
 ---
 
-**superflowsApiKey** `string` *Required*
+**superflowsApiKey** `string` _Required_
 
 The API key for your Superflows account. It starts `sfk-`. You can find this in the [**Superflows dashboard**](https://dashboard.superflows.ai/api-settings).
 
@@ -102,5 +101,13 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 `headerBackgroundColor` sets the colour of the header of the sidebar.
 
 `headerTextColor` sets the colour of the text on the header of the sidebar.
+
+---
+
+**initialMessage** `string`
+
+An initial message to "pre-prompt" the AI. When set, on page load this message is be programmatically sent to the AI as though as user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
+
+(note: this message is sent regardless of whether the sidebar is open)
 
 ---
