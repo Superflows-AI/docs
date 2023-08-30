@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-pagination_next: 'ui-components/superflows-sidebar'
+pagination_next: "ui-components/superflows-sidebar"
 ---
 
 # Superflows Button
@@ -14,12 +14,14 @@ It can be imported with:
 ```jsx
 import { SuperflowsButton } from "@superflows/chat-ui-react";
 ```
-----
 
-## Properties
 ---
 
-**superflowsApiKey** `string` *Required*
+## Properties
+
+---
+
+**superflowsApiKey** `string` _Required_
 
 The API key for your Superflows account. It starts `sfk-`. You can find this in the [**Superflows dashboard**](https://dashboard.superflows.ai/api-settings).
 
@@ -95,5 +97,13 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 This allows you to set the class name of the button. This allows you to style the button however you like.
 
 (note: if you set this, you must set the height and width of the button in the classes)
+
+---
+
+**initialMessage** `string`
+
+An initial message to "pre-prompt" the AI. When set, on page load this message is programmatically sent to the AI as though the user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
+
+(note: this message is sent regardless of whether the sidebar is open)
 
 ---
