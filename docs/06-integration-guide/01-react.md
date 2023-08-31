@@ -1,6 +1,6 @@
 ---
 sidebar_position: 2
-pagination_next: 'ui-components/superflows-button'
+pagination_next: "ui-components/superflows-button"
 ---
 
 # React Integration Guide
@@ -53,6 +53,7 @@ That should be you all set up! Please tell us if this doesn't work (on [**Github
 ### Method 2: Use the `SuperflowsSidebar` component
 
 This approach is more flexible, but requires you to add your own button to open the sidebar. It:
+
 1. Gives you full control over the button that opens the sidebar
 2. Requires you to handle the state of the sidebar (whether it is open or closed) yourself
 
@@ -63,7 +64,7 @@ import { SuperflowsSidebar } from '@superflows/chat-ui-react';
 
 export default function YourButton() {
   const [isOpen, setIsOpen] = useState(false);
-  
+
   return (
     <>
       <button

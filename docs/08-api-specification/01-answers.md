@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-pagination_next: 'api-specification/confirm'
+pagination_next: "api-specification/confirm"
 ---
 
 # Answers
@@ -9,10 +9,9 @@ Call this endpoint to get a Superflows response to user input via our API. It ma
 
 `POST https://dashboard.superflows.ai/api/v1/answers`
 
-
 ## Authentication
 
-When sending requests to the Superflows API, you need to authenticate using an `Authorization: Bearer` header. 
+When sending requests to the Superflows API, you need to authenticate using an `Authorization: Bearer` header.
 
 You can find your API token on the [API settings page](https://dashboard.superflows.ai/api-settings). It starts `sfk-*`
 
@@ -32,19 +31,19 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/answers' \\
 
 ---
 
-**user_input** `string` *Required*
+**user_input** `string` _Required_
 
 The text typed by the user in the chat box.
 
 ---
 
-**conversation_id** `number | null` *Required*
+**conversation_id** `number | null` _Required_
 
 The id returned in the previous response in this conversation. If this is the first message of the conversation, pass `null`
 
 ---
 
-**user_description** `string` *(optional)*
+**user_description** `string` _(optional)_
 
 With each API request, you can provide a description of the user who is asking the question, any useful information for accessing your API (e.g. user id) and instructions on how to address them.
 
@@ -56,7 +55,7 @@ This is never stored on our servers or in our databases.
 
 ---
 
-**user_api_key** `string` *(optional)*
+**user_api_key** `string` _(optional)_
 
 To call your API, Superflows may need an API key. This API key is passed in the header set in the Superflows dashboard.
 
@@ -64,7 +63,7 @@ Find out more about this in the [Connecting your API documentation page](/docs/c
 
 ---
 
-**mock_api_responses** `boolean` *(optional)* default `false`
+**mock_api_responses** `boolean` _(optional)_ default `false`
 
 This toggles mocking API responses, like you can in the [playground](/docs/playground/mock-api-responses).
 
@@ -72,7 +71,7 @@ When set to `true`, all responses from your API are mocked. This can be useful f
 
 ---
 
-**stream** `boolean` *(optional)* default `true`
+**stream** `boolean` _(optional)_ default `true`
 
 **As of public Alpha (now), only the streaming API is available, so set to `true`.**
 
@@ -80,8 +79,8 @@ Whether to stream the response, allowing the ‘typing’ UX seen in ChatGPT. If
 
 ## Responses
 
-
 ---
+
 ### **200**
 
 `text/event-stream`
@@ -90,7 +89,7 @@ The text stream can contain multiple chunks of JSON. Each chunk is prepended wit
 
 Those JSON objects have the following format:
 
-**id** *number*
+**id** _number_
 
 The conversation id. Required to make further requests in the same conversation.
 
@@ -99,7 +98,7 @@ The conversation id. Required to make further requests in the same conversation.
 This is the type of message you're receiving.
 
 `"assistant"` messages contain text written by the LLM.
-    
+
 `"function"` messages contain the response from calls to your API.
 
 `"debug"` messages contain debugging information.
@@ -115,6 +114,7 @@ The content of the chunk of the response.
 If the role is `"function"`, the content is a string in JSON format, which is the response from the action called.
 
 If the role is `"confirmation"`, which contains a string in JSON format. It's an array of objects where each object has the name and arguments to be presented to the user.
+
 ```ts
 [
     {
@@ -124,9 +124,10 @@ If the role is `"confirmation"`, which contains a string in JSON format. It's an
     ...
 ]
 ```
-**name**: *string (optional)*
 
-Only present if the role is *“function”*.
+**name**: _string (optional)_
+
+Only present if the role is _“function”_.
 
 **Example chunk**
 
@@ -135,41 +136,41 @@ Only present if the role is *“function”*.
     "id": 488,
     "role":"assistant",
     "content": "information"
-}`
+}`;
 ```
 
 ---
 
 ### **400**
-    
+
     Invalid request body | No API host found - add an API host on the API settings page
-    
+
 ---
 
 ### **401**
-    
+
     Authentication failed
 
 ---
 
 ### **404**
-    
+
     No active actions found
 
 ---
 
 ### **405**
-    
+
     Only POST requests allowed
 
 ---
 
 ### **500**
-    
+
     Internal Server Error
 
 ---
 
 ### **501**
-    
-    Currently only the streaming API (stream=true) has been implemented. 
+
+    Currently only the streaming API (stream=true) has been implemented.
