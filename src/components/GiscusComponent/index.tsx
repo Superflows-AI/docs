@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 import Giscus from "@giscus/react";
-import { useColorMode } from '@docusaurus/theme-common';
+import { useColorMode } from "@docusaurus/theme-common";
 
 export default function GiscusComponent() {
   const { colorMode } = useColorMode();
@@ -10,8 +10,8 @@ export default function GiscusComponent() {
       repo="Superflows-AI/docs"
       repoId="R_kgDOJ86Y7w"
       category="General"
-      categoryId="DIC_kwDOJ86Y784CYJtO"  // E.g. id of "General"
-      mapping="url"                        // Important! To map comments to URL
+      categoryId="DIC_kwDOJ86Y784CYJtO" // E.g. id of "General"
+      mapping="url" // Important! To map comments to URL
       term="Welcome to @giscus/react component!"
       strict="0"
       reactionsEnabled="1"

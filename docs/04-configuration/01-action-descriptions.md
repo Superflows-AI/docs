@@ -12,6 +12,6 @@ It's best to use simple, clear language to describe actions. The description sho
 
 ### Editing Action Descriptions
 
-Action descriptions can be edited from the [Dashboard Actions page](https://dashboard.superflows.ai/actions). Hover over the Action you want to edit, and click the three dots to bring up the editing interface. 
+Action descriptions can be edited from the [Dashboard Actions page](https://dashboard.superflows.ai/actions). Hover over the Action you want to edit, and click the three dots to bring up the editing interface.
 
 You can then edit the description in the text field. Make sure to save your changes at the bottom of the editing interface before exiting the interface.

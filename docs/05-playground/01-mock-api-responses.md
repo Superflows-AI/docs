@@ -15,4 +15,3 @@ This can be enabled or disabled with the toggle on the right hand side of the sc
 When enabled, this means the assistant will generate artifical data to respond to the request made in the Playground. The artificial data will be generated based on the type and description provided for the endpoint being mock queried in the API Specification.
 
 As with all settings in the Playground, setting this toggle only applies to the Playground. It will not impact any requests made to the Superflows API - these are controlled by body parameters sent in the API requests.
-

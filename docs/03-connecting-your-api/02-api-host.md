@@ -1,6 +1,6 @@
 ---
 sidebar_position: 7
-pagination_next: 'configuration/action-descriptions'
+pagination_next: "configuration/action-descriptions"
 ---
 
 # Connecting to your API
@@ -22,11 +22,12 @@ The API host is the url where your API is hosted. It should start with `https://
 To authenticate to your API, Superflows needs to correctly add your API key to the header of your API requests.
 
 Superflows needs 2 things:
-1. Which header to set: this is set in the dashboard
-2. Your API key: this is sent in each request and never stored by Superflows*
 
-Authentication configuration can be found in the Project page of the Dashboard under `API Settings / Authentication header`. There are two dropdown menus which show the accepted Authentication schemes. 
+1. Which header to set: this is set in the dashboard
+2. Your API key: this is sent in each request and never stored by Superflows\*
+
+Authentication configuration can be found in the Project page of the Dashboard under `API Settings / Authentication header`. There are two dropdown menus which show the accepted Authentication schemes.
 
 The left-hand menu defines the header used. The right-hand menu defines the authentication scheme used. This is optional and can be set to `None` if necessary.
 
-*Note: You may not be happy sending your API key to Superflows. If this is the case, you can self-host, so your API key never leaves a server hosted by you. Read the [self-hosting guide](/docs/self-hosting) to understand how to self-host.
+\*Note: You may not be happy sending your API key to Superflows. If this is the case, you can self-host, so your API key never leaves a server hosted by you. Read the [self-hosting guide](/docs/self-hosting) to understand how to self-host.
