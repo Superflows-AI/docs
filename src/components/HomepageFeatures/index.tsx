@@ -1,54 +1,65 @@
-import React from 'react';
-import clsx from 'clsx';
-import styles from './styles.module.css';
+import React from "react";
+import clsx from "clsx";
+import styles from "./styles.module.css";
 
 type FeatureItem = {
   title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
+  Svg: React.ComponentType<React.ComponentProps<"svg">>;
   description: JSX.Element;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Simple Setup',
-    Png: require('@site/static/img/docs/homepage/1-upload.png').default,
+    title: "Simple Setup",
+    Png: require("@site/static/img/docs/homepage/1-upload.png").default,
     description: (
       <>
-        Just upload an API Spec, connect your API, and get a functional 
+        Just upload an API Spec, connect your API, and get a functional
         assistant for your product
       </>
     ),
   },
   {
-    title: 'Developer Dashboard',
-    Png: require('@site/static/img/docs/homepage/2-dash.png').default,
+    title: "Developer Dashboard",
+    Png: require("@site/static/img/docs/homepage/2-dash.png").default,
     description: (
       <>
-        Configure and evaluate your assistant in a simple to use developer dashboard
+        Configure and evaluate your assistant in a simple to use developer
+        dashboard
       </>
     ),
   },
   {
-    title: 'Easy Integration',
-    Png: require('@site/static/img/docs/homepage/3-integrate.png').default,
+    title: "Easy Integration",
+    Png: require("@site/static/img/docs/homepage/3-integrate.png").default,
     //Svg: require('@site/static/img/3-deploy.svg').default,
     description: (
-      <>
-          Integrate your assistant into your product with a few lines of code
-      </>
+      <>Integrate your assistant into your product with a few lines of code</>
     ),
   },
 ];
 
-function Feature({title, Png, description}: FeatureItem) {
+function Feature({ title, Png, description }: FeatureItem) {
   return (
-    <div className={clsx('col col--4')}>
-        <div className="text--center padding-horiz--md">
-            <h3 style={{margin: 0}}>{title}</h3>
-            <p style={{"margin-bottom": "5px"}}>{description}</p>
-        </div>
-        <div className="text--center">
-          <img src={Png} style={{"margin-bottom": "10px", "border-radius": "0.375rem", "object-fit": "cover", "border-width": "2px", borderColor: "#94a3b8", borderStyle: "solid"}} className={styles.featurePng} role="img" />
+    <div className={clsx("col col--4")}>
+      <div className="text--center padding-horiz--md">
+        <h3 style={{ margin: 0 }}>{title}</h3>
+        <p style={{ "margin-bottom": "5px" }}>{description}</p>
+      </div>
+      <div className="text--center">
+        <img
+          src={Png}
+          style={{
+            "margin-bottom": "10px",
+            "border-radius": "0.375rem",
+            "object-fit": "cover",
+            "border-width": "2px",
+            borderColor: "#94a3b8",
+            borderStyle: "solid",
+          }}
+          className={styles.featurePng}
+          role="img"
+        />
       </div>
     </div>
   );
