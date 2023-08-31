@@ -107,3 +107,9 @@ An initial message to "pre-prompt" the AI. When set, on page load this message i
 (note: this message is sent regardless of whether the sidebar is open)
 
 ---
+
+**welcomeText** `string`
+
+Welcome text to be displayed to the user from the assistant. When set it will appear as though the chat assistant has written this message. For example, "Hi, welcome to Acme AI, how may I help you today?"
+
+---
