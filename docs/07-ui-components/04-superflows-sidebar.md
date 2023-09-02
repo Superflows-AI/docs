@@ -1,23 +1,41 @@
 ---
-sidebar_position: 1
-pagination_next: "ui-components/chat"
+sidebar_position: 4
+pagination_next: "integration-guide/react"
 ---
 
-# Superflows Button
+# Sidebar
 
-The `SuperflowsButton` React component is a button which open a Superflows chatbot as either a sidebar or modal.
+![Superflows-Sidebar](../../static/img/docs/ui-components/sidebar.png)
 
-![Superflows-button](../../static/img/docs/ui-components/superflows-button.png)
+:::tip
+It's recommended to use the `SuperflowsButton` instead, as it handles the state of the sidebar (open or closed) for you. 
 
-It can be imported with:
+To do this, you'll need to set the `styling` property of `SuperflowsButton` to contain `{type: "sidebar"}`. This will cause the button to open the sidebar instead of the modal.
+
+If you use `SuperflowsSidebar` directly, you'll need to handle the state of the modal yourself.
+:::
+
+Import the `SuperflowsSidebar` React component with:
 
 ```jsx
-import { SuperflowsButton } from "@superflows/chat-ui-react";
+import { SuperflowsSidebar } from "@superflows/chat-ui-react";
 ```
 
 ---
 
 ## Properties
+
+---
+
+**open** `boolean` _Required_
+
+Whether the sidebar is open or closed. This is a boolean, and can be set to `true` or `false`.
+
+---
+
+**setOpen** `string` _Required_
+
+A function which sets the state of the sidebar. This is required to be passed in, as it allows the sidebar to be closed when the user clicks outside of it.
 
 ---
 
@@ -73,23 +91,14 @@ When set to `true`, all responses from your API are mocked. This can be useful f
 
 ---
 
-**styling**
-```
-{
-  type?: "modal" | "sidebar";
-  solidIcon?: boolean;
+**styling** `{
   slideoverSide?: "right" | "left";
   buttonColor?: string;
   headerBackgroundColor?: string;
   headerTextColor?: string;
-}
-```
+}`
 
 This allows you to set basic aspects of the style of the Superflows sidebar. This will be expanded to allow much deeper customization in the future.
-
-`type` sets whether the Superflows chat opens as a modal or a sidebar. This is set to `modal` by default.
-
-`solidIcon` sets whether the icon is solid or outlined. This is set to `false` by default.
 
 `slideoverSide` sets which side of the screen the sidebar opens on. Set "right" if you want it to open on the right hand side of the screen.
 
@@ -98,14 +107,6 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 `headerBackgroundColor` sets the colour of the header of the sidebar.
 
 `headerTextColor` sets the colour of the text on the header of the sidebar.
-
----
-
-**buttonStyling** `string`
-
-This allows you to set the class name of the button. This allows you to style the button however you like.
-
-(note: if you set this, you must set the height and width of the button in the classes)
 
 ---
 
