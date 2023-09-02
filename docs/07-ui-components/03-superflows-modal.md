@@ -1,23 +1,37 @@
 ---
-sidebar_position: 1
-pagination_next: "ui-components/chat"
+sidebar_position: 3
+pagination_next: "ui-components/superflows-sidebar"
 ---
 
-# Superflows Button
+# Modal
 
-The `SuperflowsButton` React component is a button which open a Superflows chatbot as either a sidebar or modal.
+![Superflows-Modal](../../static/img/docs/ui-components/modal.png)
 
-![Superflows-button](../../static/img/docs/ui-components/superflows-button.png)
+:::tip
+It's recommended to use the `SuperflowsButton` instead, as it handles the state of the modal (open or closed) for you. If you use `SuperflowsModal` directly, you'll need to handle the state of the modal yourself.
+:::
 
-It can be imported with:
+Import the `SuperflowsModal` React component with:
 
 ```jsx
-import { SuperflowsButton } from "@superflows/chat-ui-react";
+import { SuperflowsModal } from "@superflows/chat-ui-react";
 ```
 
 ---
 
 ## Properties
+
+---
+
+**open** `boolean` _Required_
+
+Whether the modal is open or closed. This is a boolean, and can be set to `true` or `false`.
+
+---
+
+**setOpen** `string` _Required_
+
+A function which sets the state of the modal. This is required to be passed in, as it allows the modal to be closed when the user clicks outside of it.
 
 ---
 
@@ -35,7 +49,7 @@ The URL of the Superflows deployment. This defaults to the cloud deployment, but
 
 **AIname** `string`
 
-The name of the AI shown in the sidebar window. It doesn't affect the behaviour of the AI.
+The name of the AI shown in the modal window. It doesn't affect the behaviour of the AI.
 
 ---
 
@@ -55,7 +69,7 @@ With each API request, you can provide a description of the user who is asking t
 
 **suggestions** `string[]`
 
-An array of suggestions to show in the sidebar. These are shown as buttons, and when clicked, the user input is set to the text of the button.
+An array of suggestions to show in the modal. These are shown as buttons, and when clicked, the user input is set to the text of the button.
 
 ---
 
@@ -73,39 +87,22 @@ When set to `true`, all responses from your API are mocked. This can be useful f
 
 ---
 
-**styling**
-```
-{
-  type?: "modal" | "sidebar";
-  solidIcon?: boolean;
-  slideoverSide?: "right" | "left";
+**styling** `{
+  modalClasses?: string;
   buttonColor?: string;
   headerBackgroundColor?: string;
   headerTextColor?: string;
-}
-```
+}`
 
-This allows you to set basic aspects of the style of the Superflows sidebar. This will be expanded to allow much deeper customization in the future.
+This allows you to set basic aspects of the style of the Superflows modal. This will be expanded to allow much deeper customization in the future.
 
-`type` sets whether the Superflows chat opens as a modal or a sidebar. This is set to `modal` by default.
-
-`solidIcon` sets whether the icon is solid or outlined. This is set to `false` by default.
-
-`slideoverSide` sets which side of the screen the sidebar opens on. Set "right" if you want it to open on the right hand side of the screen.
+`modalClasses` sets the classes of the modal. This allows you to set the width, height, background colour and other aspects of the modal.
 
 `buttonColor` sets the colour of the submit button.
 
-`headerBackgroundColor` sets the colour of the header of the sidebar.
+`headerBackgroundColor` sets the colour of the header of the modal.
 
-`headerTextColor` sets the colour of the text on the header of the sidebar.
-
----
-
-**buttonStyling** `string`
-
-This allows you to set the class name of the button. This allows you to style the button however you like.
-
-(note: if you set this, you must set the height and width of the button in the classes)
+`headerTextColor` sets the colour of the text on the header of the modal.
 
 ---
 
@@ -113,7 +110,7 @@ This allows you to set the class name of the button. This allows you to style th
 
 An initial message to "pre-prompt" the AI. When set, on page load this message is programmatically sent to the AI as though the user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
 
-(note: this message is sent regardless of whether the sidebar is open)
+(note: this message is sent regardless of whether the modal is open)
 
 ---
 

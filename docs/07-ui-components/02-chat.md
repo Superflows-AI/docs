@@ -1,35 +1,21 @@
 ---
 sidebar_position: 2
-pagination_next: "integration-guide/react"
+pagination_next: "ui-components/superflows-modal"
 ---
 
-# Superflows Sidebar
+# Chat Component
 
-![Superflows-Sidebar](../../static/img/docs/superflows-sidebar.gif)
+![Superflows-Chat-Component](../../static/img/docs/ui-components/chat-component.png)
 
-The `SuperflowsSidebar` React component only includes the Superflows sidebar.
-
-It can be imported with:
+The `SuperflowsChat` React component allows you to embed a Superflows chat in your website. It can be imported with:
 
 ```jsx
-import { SuperflowsSidebar } from "@superflows/chat-ui-react";
+import { SuperflowsChat } from "@superflows/chat-ui-react";
 ```
 
 ---
 
 ## Properties
-
----
-
-**open** `boolean` _Required_
-
-Whether the sidebar is open or closed. This is a boolean, and can be set to `true` or `false`.
-
----
-
-**setOpen** `string` _Required_
-
-A function which sets the state of the sidebar. This is required to be passed in, as it allows the sidebar to be closed when the user clicks outside of it.
 
 ---
 
@@ -42,12 +28,6 @@ The API key for your Superflows account. It starts `sfk-`. You can find this in 
 **superflowsUrl** `string`
 
 The URL of the Superflows deployment. This defaults to the cloud deployment, but if you're self-hosting, or connecting to a local deployment, you'll need to change this.
-
----
-
-**AIname** `string`
-
-The name of the AI shown in the sidebar window. It doesn't affect the behaviour of the AI.
 
 ---
 
@@ -67,7 +47,7 @@ With each API request, you can provide a description of the user who is asking t
 
 **suggestions** `string[]`
 
-An array of suggestions to show in the sidebar. These are shown as buttons, and when clicked, the user input is set to the text of the button.
+An array of suggestions to show in the chat. These are shown as buttons, and when clicked, the user input is set to the text of the button.
 
 ---
 
@@ -86,21 +66,12 @@ When set to `true`, all responses from your API are mocked. This can be useful f
 ---
 
 **styling** `{
-  slideoverSide?: "right" | "left";
   buttonColor?: string;
-  headerBackgroundColor?: string;
-  headerTextColor?: string;
 }`
 
-This allows you to set basic aspects of the style of the Superflows sidebar. This will be expanded to allow much deeper customization in the future.
-
-`slideoverSide` sets which side of the screen the sidebar opens on. Set "right" if you want it to open on the right hand side of the screen.
+This allows you to set basic aspects of the style of the Superflows chat. This will be expanded to allow much deeper customization in the future.
 
 `buttonColor` sets the colour of the submit button.
-
-`headerBackgroundColor` sets the colour of the header of the sidebar.
-
-`headerTextColor` sets the colour of the text on the header of the sidebar.
 
 ---
 
@@ -108,7 +79,7 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 
 An initial message to "pre-prompt" the AI. When set, on page load this message is programmatically sent to the AI as though the user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
 
-(note: this message is sent regardless of whether the sidebar is open)
+(note: this message is sent regardless of whether the chat is visible or not)
 
 ---
 
