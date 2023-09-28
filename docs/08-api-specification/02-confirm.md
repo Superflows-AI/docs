@@ -21,8 +21,10 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/confirm' \\
 -H 'Content-type: application/json' \\
 -H 'Authorization: Bearer <Your-Superflows-API-key>' \\
 -d '{
-  "user_input": "How do I invite a teammate to my account?",
-  "conversation_id": null
+  "conversation_id": 72734,
+  "confirm": true,
+  "user_api_key": "<Your-Software's-API-key>",
+  
 }'
 ```
 
@@ -30,15 +32,15 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/confirm' \\
 
 ---
 
-**conversation_id** `number | null` _Required_
+**conversation_id** `number` _Required_
 
-The id returned in the previous response in this conversation. If this is the first message of the conversation, pass `null`
+The id returned in the previous response in this conversation where confirmation was required.
 
 ---
 
 **confirm** `boolean` _Required_
 
-Whether to stream the response, allowing the ‘typing’ UX seen in ChatGPT. If true, partial message chunks will be sent as they become available. **Only streaming API is available, so set to `true` or leave out this parameter.**
+Whether the user confirmed the action should be taken or not. Set to `true` or `false`.
 
 ---
 
