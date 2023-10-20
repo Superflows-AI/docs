@@ -22,7 +22,7 @@ You will be prompted to choose whether you would like to 'Quickstart' or 'Build 
     - Choose a preset assistant
     - Test in our playground
 
-- [**Build AI Assistant**](./02-build-assistant) from scratch with your API specification
+- [**Build AI Assistant**](./build-assistant) from scratch with your API specification
   - Recommended for those looking to set up their own project
   - The next steps are:
     - Upload your API Specification
