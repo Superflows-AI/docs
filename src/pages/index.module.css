@@ -3,11 +3,22 @@
  * and scoped locally.
  */
 
-.heroBanner {
+ .heroBanner {
+  --background-image: url('/img/hero-background-light.png'); /* Light mode image */
+  background-image: var(--background-image);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 4rem 0;
   text-align: center;
   position: relative;
   overflow: hidden;
+}
+
+/* Define dark mode styles */
+[data-theme='dark'] .heroBanner {
+  --background-image: url('/img/hero-background-dark.png'); /* Dark mode image */
+  background-image: var(--background-image);
 }
 
 @media screen and (max-width: 996px) {
