@@ -25,7 +25,7 @@ They will be organised into 'tags' depending on how your API Specification is or
 
 ![API-upload](../../static/img/docs/getting-started/build-assistant/1-actions-tabs.png)
 
-If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](/docs/03-connecting-your-api/api-spec-requirements).
+If you hit an error when uploading your API Specification, head to our [API Specification Requirements page](../connecting-your-api/api-spec-requirements)
 
 ## 3. Selecting actions
 
