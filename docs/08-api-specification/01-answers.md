@@ -27,7 +27,7 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/answers' \\
 }'
 ```
 
-## Query parameters
+## Request Body contents
 
 ---
 

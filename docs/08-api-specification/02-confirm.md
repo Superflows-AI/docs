@@ -28,7 +28,7 @@ curl -X POST 'https://dashboard.superflows.ai/api/v1/confirm' \\
 }'
 ```
 
-## Query parameters
+## Request body contents
 
 ---
 
