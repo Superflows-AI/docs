@@ -73,6 +73,48 @@ An array of suggestions to show in the modal. These are shown as buttons, and wh
 
 ---
 
+**welcomeText** `string`
+
+Welcome text to be displayed to the user from the assistant. When set it will appear as though the chat assistant has written this message. For example, "Hi, welcome to Acme AI, how may I help you today?"
+
+---
+
+**api_params** `type below` _(optional)_ default `true`
+
+This enables API-specific information to be set in code. This allows multi-tenant hosting (i.e. changing the hostname of the API depending on the customer/user), and setting headers in API calls through code.
+
+This is an array of objects, each object corresponding to an API that Superflows needs access to. These APIs  must first be added to the Superflows dashboard.
+
+Each object consists of:
+- **name** `string` _Required_
+
+    The name of the API. This is used to identify the API. Must match the API name in the [Superflows dashboard](https://dashboard.superflows.ai/actions).
+
+
+- **hostname** `string` _(optional)_
+
+  This overrides the hostname of the API. This allows multi-tenant hosting: changing this value based on which customer is logged in allows you to route requests to the correct API host.
+
+    E.g. Customer 1 has hostname https://c1.api.com and customer 2 has hostname https://c2.api.com. When customer 1 is logged in, the hostname is set to https://c1.api.com, and all requests are sent to that.
+
+
+- **headers** `{ [headerName: string]: string }` _(optional)_
+
+    The headers to be sent with all requests made to this API. This allows customer-specific headers to be set in code.
+
+Example:
+
+    [
+        {
+            name: "API name",
+            hostname: "https://api.name.com",
+            headers: { "cookie": "cookie-value" },
+        },
+        ...
+    ]
+
+---
+
 **devMode** `boolean`
 
 This enables [**developer mode**](./docs/playground/developer-mode). This is useful for debugging, but should always be set to `false` in production.
@@ -111,11 +153,5 @@ This allows you to set basic aspects of the style of the Superflows modal. This 
 An initial message to "pre-prompt" the AI. When set, on page load this message is programmatically sent to the AI as though the user entered the text into the chat window. Both the initial message and the response from the AI will be visible to the user in the chat window.
 
 (note: this message is sent regardless of whether the modal is open)
-
----
-
-**welcomeText** `string`
-
-Welcome text to be displayed to the user from the assistant. When set it will appear as though the chat assistant has written this message. For example, "Hi, welcome to Acme AI, how may I help you today?"
 
 ---

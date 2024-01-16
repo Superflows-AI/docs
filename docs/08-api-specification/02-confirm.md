@@ -50,6 +50,38 @@ To call your API, Superflows may need an API key. This API key is passed in the 
 
 ---
 
+**api_params** `type below` _(optional)_ default `true`
+
+This enables API-specific information to be set in code. This allows multi-tenant hosting (i.e. changing the hostname of the API depending on the customer/user), and setting headers in API calls through code.
+
+This is an array of objects, each object corresponding to an API that Superflows needs access to. These APIs  must first be added to the Superflows dashboard.
+
+Each object consists of:
+- **name** `string` _Required_
+
+    The name of the API. This is used to identify the API in the Superflows dashboard. This must match the name of the API in the dashboard.
+
+- **hostname** `string` _(optional)_
+
+        The hostname of the API. This allows multi-tenant hosting by changing the hostname of an API based on which customer/user is accessing it.
+
+- **headers** `{ [headerName: string]: string }` _(optional)_
+
+    The headers to be sent with all requests made to this API.
+
+Example:
+
+    [
+        {
+            name: "API name",
+            hostname: "https://api.name.com",
+            headers: { "cookie": "cookie-value" },
+        },
+        ...
+    ]
+
+---
+
 **mock_api_responses** `boolean` _(optional)_ default `false`
 
 When set to true, all responses from your API are mocked. Set to `false` when in production.
