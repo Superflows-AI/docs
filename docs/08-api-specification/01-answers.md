@@ -107,6 +107,12 @@ Example:
 
 ---
 
+**debug** `boolean` _(optional)_ default `false`
+
+We recommend you temporarily set this to `true` when implementing Superflows in your frontend. When set, this runs extra checks on the backend to ensure you've set things up optimally.
+
+---
+
 **stream** `boolean` _(optional)_ default `true`
 
 Whether to stream the response word-by-word.
