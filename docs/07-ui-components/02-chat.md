@@ -101,6 +101,13 @@ An initial message to "pre-prompt" the AI. When set, on page load this message i
 
 ---
 
+**debugMode** `boolean` _(optional)_ default `false`
+
+We recommend you temporarily set this to `true` when implementing Superflows in your frontend. When set, this runs extra checks on the backend to ensure you've set things up optimally.
+
+
+---
+
 **devMode** `boolean`
 
 This enables [**developer mode**](./docs/playground/developer-mode). This is useful for debugging, but should always be set to `false` in production.
