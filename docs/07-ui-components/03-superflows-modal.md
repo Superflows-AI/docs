@@ -115,6 +115,22 @@ Example:
 
 ---
 
+**showFunctionCalls** `boolean` _(optional)_ default `false`
+
+Set to `false` by default. Whether to show function calls in the chat window. This can be useful with more technical users to let them check the data the AI answered them with.
+
+Showing function calls:
+
+![Chat window with function calls shown](../../static/img/docs/ui-components/showing-function-calls.png)
+
+**Not** showing function calls:
+
+![Chat window with function calls not shown](../../static/img/docs/ui-components/not-showing-function-calls.png)
+
+
+---
+
+
 **debugMode** `boolean` _(optional)_ default `false`
 
 We recommend you temporarily set this to `true` when implementing Superflows in your frontend. When set, this runs extra checks on the backend to ensure you've set things up optimally.
