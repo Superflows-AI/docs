@@ -169,6 +169,14 @@ Set to `true` by default. Whether to enable the user to input commands via speec
 
 ---
 
+**speechLanguage** `string` _(optional)_ default `en`
+
+The language that the speech recognition should detect. The language codes accepted are outlined [here](https://www.science.co.il/language/Locale-codes.php).
+
+Requires enableChat to be set to `true`
+
+---
+
 **buttonStyling** `string`
 
 This allows you to set the class name of the button. This allows you to style the button however you like.
