@@ -120,6 +120,14 @@ Set to `true` by default. Whether to enable the user to input commands via speec
 
 ---
 
+**speechLanguage** `string` _(optional)_ default `en`
+
+The language that the speech recognition should detect. The language codes accepted are outlined [here](https://www.science.co.il/language/Locale-codes.php).
+
+Requires enableChat to be set to true
+
+---
+
 **debugMode** `boolean` _(optional)_ default `false`
 
 We recommend you temporarily set this to `true` when implementing Superflows in your frontend. When set, this runs extra checks on the backend to ensure you've set things up optimally.
