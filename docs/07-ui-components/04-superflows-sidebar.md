@@ -49,6 +49,8 @@ The API key for your Superflows account. It starts `sfk-`. You can find this in 
 
 The URL of the Superflows deployment. This defaults to the cloud deployment, but if you're self-hosting, or connecting to a local deployment, you'll need to change this.
 
+Also, if using an API Gateway, set this to the URL of the API Gateway.
+
 ---
 
 **AIname** `string`

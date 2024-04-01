@@ -1,0 +1,8 @@
+{
+  "label": "API Gateway (optional)",
+  "position": 9,
+  "link": {
+    "type": "generated-index",
+    "description": "What a Superflows API Gateway is, why you might want to use one and how to set it up.",
+  }
+}
