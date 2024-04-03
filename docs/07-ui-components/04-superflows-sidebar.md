@@ -161,7 +161,7 @@ Showing function calls:
 
 ---
 
-**enableChat** `boolean` _(optional)_ default `true`
+**enableSpeech** `boolean` _(optional)_ default `true`
 
 Set to `true` by default. Whether to enable the user to input commands via speech. Speech requires granting the browser permission to use the microphone.
 
@@ -171,7 +171,7 @@ Set to `true` by default. Whether to enable the user to input commands via speec
 
 The language that the speech recognition should detect. The language codes accepted are outlined [here](https://www.science.co.il/language/Locale-codes.php).
 
-Requires enableChat to be set to `true`
+Requires enableSpeech to be set to `true`
 
 ---
 
