@@ -42,7 +42,7 @@ All 3 endpoints in the API Gateway should be POST requests. You need to send 2 h
 1. `Content-type: application/json`
 2. `Authorization: Bearer <Your-Superflows-API-key>`
 
-The request body should be identical to the request body sent to the API Gateway endpoint by the frontend.
+**The request body should be identical to the request body sent to the API Gateway endpoint by the frontend component.**
 
 ### Example request
 
