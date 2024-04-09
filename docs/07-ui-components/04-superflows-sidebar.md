@@ -147,6 +147,16 @@ This allows you to set basic aspects of the style of the Superflows sidebar. Thi
 
 ---
 
+**textBelowInput** `string` _(optional)_
+
+Text to be displayed below the input box in the chat window. This can be used to provide additional information to the user.
+
+You can include links using Markdown format `[link text](https://url.com)`.
+
+![Superflows-button with text below input](../../static/img/docs/ui-components/text-below-input.png)
+
+---
+
 **showFunctionCalls** `boolean` _(optional)_ default `false`
 
 Set to `false` by default. Whether to show function calls in the chat window. This can be useful with more technical users to let them check the data the AI answered them with.

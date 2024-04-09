@@ -144,6 +144,16 @@ Requires enableSpeech to be set to `true`
 
 ---
 
+**textBelowInput** `string` _(optional)_
+
+Text to be displayed below the input box in the chat window. This can be used to provide additional information to the user.
+
+You can include links using Markdown format `[link text](https://url.com)`.
+
+![Superflows-button with text below input](../../static/img/docs/ui-components/text-below-input.png)
+
+---
+
 **debugMode** `boolean` _(optional)_ default `false`
 
 We recommend you temporarily set this to `true` when implementing Superflows in your frontend. When set, this runs extra checks on the backend to ensure you've set things up optimally.
