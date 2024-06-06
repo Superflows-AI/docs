@@ -67,6 +67,14 @@ Welcome text to be displayed to the user from the assistant. When set it will ap
 
 ---
 
+**user_id** `string`
+
+A unique identifier representing the user. Used to help you track the user's conversation history in the Transcripts page.
+
+(note: requires `@superflows/chat-ui-react` version 1.2.61 or higher)
+
+---
+
 **api_params** `type below` _(optional)_ default `true`
 
 This enables API-specific information to be set in code. This allows multi-tenant hosting (i.e. changing the hostname of the API depending on the customer/user), and setting headers in API calls through code.
